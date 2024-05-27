@@ -217,7 +217,8 @@
                 </div>
                 <div class="col-sm-8 col-md-6">
                     <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle"
-                            src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                            src="./Images/favicon.ico" style="height: 100px;" alt="..." /></div>
+                            <!-- https://source.unsplash.com/u8Jn2rzYIps/900x900 -->
                 </div>
             </div>
         </div>
@@ -231,15 +232,17 @@
                     <br />
                     Start building.
                 </h2>
-                <h2 class="w-100 text-center mt-5">Select a Breed</h2>
+                <h2 class="w-100 text-center mt-5">Find a Breed</h2>
                 <select id="breedSelect" style="width: 300px" class="form-select form-select-lg my-1 mx-auto"
                     aria-label="form-select-lg"></select>
                 <div class="d-flex">
                     <button id="FindDogBtn" class="btn btn-outline-light py-3 px-4 rounded-pill"
-                        style="margin-left: 42%">
+                        style="margin-left: 42%; height: 55px;">
                         Find Your Dog
                     </button>
-                    <div id="image-gallery" style="height: 10px; width: 10px;" >
+                    <div class="wrap-image" style="border: 5px;max-width: 170px; height: 170px; display: flex; flex-direction: row;"
+                    <div id="image-gallery" style="max-width: 100%; height: 100%;" >
+                    </div>
                     </div>
                 </div>
             </div>
@@ -284,10 +287,9 @@
                     <!-- * * SB Forms Contact Form * *-->
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
+                    <!-- form functional with current API token from 5/27/24 to 6/6/24-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form id="contactForm" data-sb-form-api-token="6206aac8-d855-4a3f-9833-2bdfdb890092">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..."
@@ -321,22 +323,15 @@
                             </div>
                         </div>
                         <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
+                       
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
                                 <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                               
                             </div>
                         </div>
                         <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
+                       
                         <div class="d-none" id="submitErrorMessage">
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
@@ -357,6 +352,7 @@
     <script src="./JS/webapp.js"></script>
     <script src="./JS/getImage.js"></script>
     <script src="./JS/dropdown.js"></script>
+    <script src="./JS/formapp.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
